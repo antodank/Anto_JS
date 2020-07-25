@@ -1,0 +1,20 @@
+https://blog.logrocket.com/a-complete-guide-to-threads-in-node-js-4fa3898fe74f/
+https://medium.com/@onlykiosk/javascript-queue-stack-heap-thread-process-recursion-stack-overflow-event-loop-macro-task-7bc0db138899
+
+Node.js uses two kinds of threads: a main thread handled by event loop and several auxiliary threads in the worker pool.
+
+Event loop is the mechanism that takes callbacks (functions) and registers them to be executed at some point in the future
+
+Worker Pool handles asynchronous I/O operations — primarily, interactions with the system’s disk and network
+
+fs.readFile(path.join(__dirname, './package.json'), (err, content) => {
+ if (err) {
+   return null;
+ }
+ console.log(content.toString());
+})
+
+node ell the worker pool to read the file and call the provided function with the result. 
+Since worker pool has its own threads, the event loop can continue executing normally while the file is being read.
+
+'Event Loop iteration' which implies an iteration of event loop over all of its phases.

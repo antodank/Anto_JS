@@ -1,0 +1,150 @@
+https://www.youtube.com/watch?v=Bv_5Zv5c-Ts
+https://www.youtube.com/watch?v=PkZNo7MFNFg
+https://codeburst.io/javascript-demystified-variable-hoisting-c3c4d2e8fd40
+https://codeburst.io/the-ultimate-guide-to-learning-full-stack-web-development-in-6-months-for-30-72b3854a7458
+
+functional programming in JS 
+https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming
+
+https://www.freecodecamp.org/news/the-complete-javascript-handbook-f26b2c71719c/
+Javascript
+JavaScript is case sensitive.
+
+Comments 
+// songle line comment
+
+/* multiline comments
+start and ends with */
+
+var
+var can be re-declared and re-assigned
+var is function scoped
+once declred then it is available in global context
+
+let
+let can not be re-defined or declared again 
+(throws error - Identifier 'letName' has already been declared ) 
+value can be re-assigned
+available inside the block it's declared
+
+Const
+It is same as let
+it means the variable cannot be re-assigned.
+but if it object then properties can be re-assigned
+
+
+Primitive types
+
+Primitive types are
+numbers
+strings
+booleans
+symbols
+
+Special Types
+Null
+Undefined
+
+Object types
+Object types have properties and also have methods that can act on those properties.
+
+Expressions
+code that the JavaScript engine can evaluate, and return a value.
+
+Comparison operators
+< means "less than"
+<= means "less than or equal to"
+> means "greater than"
+>= means "greater than or equal to"
+
+=== checks for equality
+!== checks for inequality
+
+Arrays
+
+
+Higher Order Functions
+
+structural sharing  - immutable
+
+
+LocalStorage
+
+- Stores data with no expiration date, and gets cleared only through JavaScript, 
+or clearing the Browser cache / Locally Stored Data
+- Data is transferred to the server only through javascript.
+- Storage limit is the maximum amongst the three
+
+SessionStorage
+
+- The sessionStorage object stores data only for a session, meaning that the data is stored 
+until the browser (or tab) is closed.
+- Data is transferred to the server only through javascript.
+- Storage limit is larger than a cookie (at least 5MB).
+
+Cookie
+
+- Stores data that has to be sent back to the server with subsequent requests.
+Its expiration varies based on the type and the expiration duration can be set 
+from either server-side or client-side (normally from server-side).
+- Cookies are primarily for server-side reading (can also be read on client-side),
+localStorage and sessionStorage can only be read on client-side.
+- Size must be less than 4KB.
+- Cookies can be made secure by setting the httpOnly flag as true for that cookie. 
+This prevents client-side access to that cookie
+
+
+Debuging Tips - 
+
+console.log();
+
+debugger;
+ Chrome will automatically stop there when executing
+
+Display objects as a table -
+var animals = [
+    { animal: 'Horse', name: 'Henry', age: 43 },
+    { animal: 'Dog', name: 'Fred', age: 13 },
+    { animal: 'Cat', name: 'Frodo', age: 18 }
+];
+ 
+console.table(animals);
+
+- using console.time() and console.timeEnd()
+It can be super useful to know exactly how long something has taken to execute,
+
+- console.trace( will help to see call stack 
+console.trace(‘trace car’)
+
+- Break on node change
+The DOM can be a funny thing. Sometimes things change and you don’t know why. 
+However, when you need to debug JavaScript, Chrome lets you pause when a DOM element changes. 
+You can even monitor its attributes. In Chrome Inspector, right click on the element 
+and pick a break on setting
+
+
+
+
+JavaScript is a single-thread language. 
+Being single-threaded means JavaScript can only handle one task at a time.
+
+Synchronous codes are also blocking, meaning the current task will block the task defined after it.
+
+JavaScript handles async codes using callback functions
+
+The space of a stack is not infinite. 
+If we add too many tasks into a stack, the system will crash. This is called stack overflow.
+If we call function inside same function withiut end condition
+
+To better manage async codes, JavaScript divide async codes into macro task and micro task.
+
+examples of microtasks: (dependent)
+process.nextTick
+promises
+Object.observe
+
+examples of macrotasks: (independant)
+setTimeout
+setInterval
+setImmediate
+I/O

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script src=""></script>
+        <script async src=""></script>
+        <script defer src=""></script>
+    </head>
+    <body>
+    <!--
+        async - html parser finishes its task
+                async execution starts
+                html parser finished
+                documnet onload fired
+                async execution completed
+                
+                so in async we cant be sure js are loaded before onloaad of document 
+                and also prone to error if js execution needs to be ordered
+
+        defer - html parser start
+                html paser end
+                defer execution completes
+                document onload executed
+
+                so in defer approach we can be sured that all js are loaded in ordered manner
+                before document onload fired
+    -->
+    </body>
+</html>

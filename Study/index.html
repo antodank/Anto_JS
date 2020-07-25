@@ -1,0 +1,112 @@
+<html>
+    <head>
+    
+    </head>
+    <body>
+        <div>
+                <input type="button" name="btn1" id="btn1" />
+            <div><b>LESSON 1: JAVASCRIPT FUNCTION:</b></div>
+            <div>
+                    <input type="button" name="btn1" id="btn1" onClick="declaration()" value="Declaration">
+            </div>
+            <div>
+                <input type=button name="btn2" onClick="expression()" value="Expression">
+            </div>
+            <div>
+                <input type=button name="btn3" value="arrays">
+            </div>
+            <div>
+                    <input type=button name="btn4" onClick="show_random_number()" value="Random Number">
+            </div>
+        </div>
+            
+		<script>
+
+        document.write("<b>LESSON 1: VARIABLES</b><br><br>");
+
+        var abc = document.getElementById('btn1');
+        console.log(abc.value);
+        // To start we will create 2 variables:
+        var variable1 = 'Hello ';
+        var variable2 = 'World!<br><br>'; // <br> means line break in html
+         
+        // Create a third variable by adding both variables:
+        var final_text = variable1 + variable2;
+        
+        // Print the final result:
+        document.write(final_text);
+
+        function sayHello() {
+            document.write("Hello, Coding lovers!");
+        }
+
+        const a = 0; // value cant be reasigned
+        //a = 1         //TypeError: Assignment to constant variable
+        const three = 1 + 2;
+        
+        function declaration() {
+            if(true)
+            {
+                let _let1 = "_let1 = Inside declaration()";
+                var _var1 = "_var1 = Inside declaration()";
+            }
+
+            //console.log("<b>"+ _let1 + "</b><br>");
+            // undefined error because  let can be only available inside the scope it's declared
+            console.log("<b>"+ _var1 + "</b><br>");
+        }
+
+        function expression()
+        {
+            let i = 2;
+            let j = 0;
+            console.log(" i++  " + i++ + "<br>");
+            console.log(" i / j  " + i / j  + "<br>");
+            console.log(" j--  " + j-- + "<br>");
+
+            console.log(" i  " + i + "<br>");
+            console.log(" j  " + j + "<br>");
+
+            console.log(" i%0  " + i % 0 + "<br>");
+            console.log(" i**3  " + i ** 3 + "<br>");
+
+            let a = 1 * 2 + 5 / 2 % 2 // from left to right (* / %) (+ -)
+            console.log(" a " + a + "<br>")
+
+        }
+
+        
+        
+        var stringexp = `something ${1 + 2 + 3} <br>`;
+        document.write(stringexp);
+        
+        document.write("<b>LESSON 2: SOLVE AN EQUATION</b><br><br>");
+        
+        var n = 9;
+        var x = n*n;
+        document.write("Result of n*n=" + x);
+        
+        document.write("<br><br><b>LESSON 3: PRINT NUMBERS FROM 1 TO 10</b><br><br>");
+        
+        // Create a loop of 10 elements.
+        for (var i=1; i<=10; i=i+1) {
+          document.write(i); // Print the current "i" number
+          // Print a comma followed by a space if i < 10
+          if (i<10) {
+            document.write(", ");
+          }
+        }
+        
+
+        function show_random_number() {
+        
+          var random_number = Math.random(); // generate random number between 0 and 1
+          alert(random_number); // show popup with a random number
+          
+        }
+        
+        </script>
+            
+    </body>
+
+</html>
