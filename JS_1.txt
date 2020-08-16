@@ -1,3 +1,4 @@
+https://www.freecodecamp.org/news/the-complete-javascript-handbook-f26b2c71719c/
 https://www.youtube.com/watch?v=Bv_5Zv5c-Ts
 https://www.youtube.com/watch?v=PkZNo7MFNFg
 https://codeburst.io/javascript-demystified-variable-hoisting-c3c4d2e8fd40
