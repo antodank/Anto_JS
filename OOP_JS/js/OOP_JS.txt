@@ -1,0 +1,24 @@
+Javascript is a prototype-based language 
+
+Object prototype
+
+The __proto__ property -
+Every object has this property by default, which refers to the Object Protoype
+
+Object.setPrototypeOf is a method which takes in two arguments - the object (first argument) and the desired prototype (second argument).
+
+
+Constructor - 
+
+They are named with capital letter first.
+They should be executed only with "new" operator.
+
+this keyword - 
+
+How the function is invoked determines the value of this inside the function
+
+When a regular function is invoked, the value of this is the global window object
+
+If a constructor function is called with the new operator, the value of this is set to the newly-created object. 
+If a method is invoked on an object, this is set to that object itself. 
+And if a function is simply invoked, this is set to the global object: window.
