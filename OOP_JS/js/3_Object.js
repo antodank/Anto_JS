@@ -28,3 +28,17 @@ function whoThis () {
 
   console.log(Object.keys(dictionary));
   console.log(Object.values(dictionary));
+
+  const person = {
+    firstName: 'An',
+    lastName: 'To',
+    bloodGroup : 'A-'
+  };
+
+Object.keys(person).forEach((key) => { console.log(key)});
+
+Object.values(person).forEach((value) => { console.log(value)});
+
+Object.entries(person).forEach(([key, value]) => {
+  console.log(`${key}: ${value}`);
+});
