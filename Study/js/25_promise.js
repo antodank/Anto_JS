@@ -1,10 +1,16 @@
-const mypromise = new Promise((resolve,reject) => {
+const myPromise = new Promise((resolve, reject) => {  
+    // condition
+});
+
+
+const newPromise = new Promise((resolve,reject) => {
     // statment
     console.log("doing my job.");
     resolve("Done");
+    //reject("Error");
    });
     
-   mypromise.then((msg) => {
+newPromise.then((msg) => {
        //resolve statement 
        console.log(msg);
    }).catch((msg) => {

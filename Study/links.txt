@@ -1,0 +1,5 @@
+https://addyosmani.com/resources/essentialjsdesignpatterns/book/
+
+https://scotch.io/courses/10-need-to-know-javascript-concepts/closures
+
+https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope
