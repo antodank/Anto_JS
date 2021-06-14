@@ -48,3 +48,6 @@ else
     // sometimes  avoid direct comparison 
     // use conversion
     // always use ===
+
+    //The null represents an intentional absence of an object 
+    // the undefined represents an unintentional absence of a value.
